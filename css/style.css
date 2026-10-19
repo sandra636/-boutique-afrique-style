@@ -24,10 +24,10 @@ nav {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    gap: 3rem;
-    justify-content: center;
+    gap: 2rem;
+    justify-content: flex-start;
     align-items: center;
-    padding: 0 1rem;
+    padding: 0 2rem;
     list-style: none;
 }
 
@@ -37,24 +37,22 @@ nav a {
     font-weight: 600;
     font-size: 1rem;
     transition: all 0.3s ease;
-    padding: 0.75rem 1.5rem;
+    padding: 0.75rem 1.25rem;
     border-radius: 6px;
     position: relative;
     display: inline-block;
-    text-align: center;
-    min-width: 90px;
+    white-space: nowrap;
 }
 
 nav a::after {
     content: '';
     position: absolute;
     bottom: 0;
-    left: 50%;
+    left: 0;
     width: 0;
     height: 2px;
     background-color: #f0e6d2;
     transition: all 0.3s ease;
-    transform: translateX(-50%);
 }
 
 nav a:hover {
@@ -63,7 +61,7 @@ nav a:hover {
 }
 
 nav a:hover::after {
-    width: 80%;
+    width: 100%;
 }
 
 main {
