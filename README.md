@@ -7,7 +7,7 @@ Site vitrine d'une boutique en ligne proposant des produits artisanaux africains
 - **devdaphnee2** : Mainteneur + Page d'accueil
 - **sandra636** : Page catalogue
 - **gaetanleonel** : Page contact
-- **KLK20054** : Design global et README
+- **KLK2005** : Design global et README
 
 ## Fonctionnalités
 - Page d'accueil avec présentation
