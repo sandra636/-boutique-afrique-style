@@ -1,95 +1,105 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Boutique Afrique Style – Catalogue</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutique Afrique Style – Catalogue</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/catalogue.css">
 </head>
+
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="catalogue.html">Catalogue</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <header class="entete">
-    <div class="entete__contenu">
-      <h1 class="logo">Afrique <span>Style</span></h1>
-      <div class="panier" aria-live="polite">
-        🛒 Panier : <span id="compteur-panier">0</span> article(s)
-      </div>
-    </div>
-    <div class="motif-bordure" aria-hidden="true"></div>
-  </header>
+    <main class="catalogue-page">
 
-  <main class="conteneur">
-    <section class="intro">
-      <h2>Notre collection</h2>
-      <p>Tissus wax, bijoux et artisanat : le meilleur de l'Afrique, livré chez vous.</p>
-    </section>
+        <section class="catalogue-hero">
+            <h1>Notre catalogue</h1>
+            <p>Tissus wax, bijoux et artisanat : l'Afrique authentique, livrée chez vous.</p>
+            <div class="zigzag" aria-hidden="true"></div>
+        </section>
 
-    <section class="grille-produits" id="catalogue">
+        <div class="separateur" aria-hidden="true"></div>
 
-      <article class="carte">
-        <img src="images/produit1.jpg" alt="Robe en tissu wax" class="carte__image">
-        <div class="carte__corps">
-          <h3 class="carte__nom">Robe en wax</h3>
-          <p class="carte__prix">25 000 FCFA</p>
-          <button class="btn-ajouter" type="button">Ajouter au panier</button>
+        <section class="grille-produits" id="catalogue">
+
+            <article class="carte">
+                <img src="images/produit1.jpg" alt="Robe en tissu wax" class="carte__image" loading="lazy">
+                <div class="carte__corps">
+                    <h2 class="carte__nom">Robe en wax</h2>
+                    <p class="carte__prix">25 000 FCFA</p>
+                    <button class="btn-ajouter" type="button">Ajouter au panier</button>
+                </div>
+            </article>
+
+            <article class="carte">
+                <img src="images/produit2.jpg" alt="Boubou brodé" class="carte__image" loading="lazy">
+                <div class="carte__corps">
+                    <h2 class="carte__nom">Boubou brodé</h2>
+                    <p class="carte__prix">35 000 FCFA</p>
+                    <button class="btn-ajouter" type="button">Ajouter au panier</button>
+                </div>
+            </article>
+
+            <article class="carte">
+                <img src="images/produit3.jpg" alt="Sac en tissu kente" class="carte__image" loading="lazy">
+                <div class="carte__corps">
+                    <h2 class="carte__nom">Sac kente</h2>
+                    <p class="carte__prix">12 000 FCFA</p>
+                    <button class="btn-ajouter" type="button">Ajouter au panier</button>
+                </div>
+            </article>
+
+            <article class="carte">
+                <img src="images/produit4.jpg" alt="Collier en perles" class="carte__image" loading="lazy">
+                <div class="carte__corps">
+                    <h2 class="carte__nom">Collier de perles</h2>
+                    <p class="carte__prix">8 500 FCFA</p>
+                    <button class="btn-ajouter" type="button">Ajouter au panier</button>
+                </div>
+            </article>
+
+            <article class="carte">
+                <img src="images/produit5.jpg" alt="Sandales en cuir" class="carte__image" loading="lazy">
+                <div class="carte__corps">
+                    <h2 class="carte__nom">Sandales en cuir</h2>
+                    <p class="carte__prix">15 000 FCFA</p>
+                    <button class="btn-ajouter" type="button">Ajouter au panier</button>
+                </div>
+            </article>
+
+            <article class="carte">
+                <img src="images/produit6.jpg" alt="Masque décoratif sculpté" class="carte__image" loading="lazy">
+                <div class="carte__corps">
+                    <h2 class="carte__nom">Masque sculpté</h2>
+                    <p class="carte__prix">20 000 FCFA</p>
+                    <button class="btn-ajouter" type="button">Ajouter au panier</button>
+                </div>
+            </article>
+
+        </section>
+
+        <!-- Compteur du panier (flottant, toujours visible) -->
+        <div class="panier-flottant" aria-live="polite">
+            🛒 Panier : <span id="compteur-panier">0</span> article(s)
         </div>
-      </article>
 
-      <article class="carte">
-        <img src="images/produit2.jpg" alt="Boubou brodé" class="carte__image">
-        <div class="carte__corps">
-          <h3 class="carte__nom">Boubou brodé</h3>
-          <p class="carte__prix">35 000 FCFA</p>
-          <button class="btn-ajouter" type="button">Ajouter au panier</button>
-        </div>
-      </article>
+    </main>
 
-      <article class="carte">
-        <img src="images/produit3.jpg" alt="Sac en tissu kente" class="carte__image">
-        <div class="carte__corps">
-          <h3 class="carte__nom">Sac kente</h3>
-          <p class="carte__prix">12 000 FCFA</p>
-          <button class="btn-ajouter" type="button">Ajouter au panier</button>
-        </div>
-      </article>
+    <footer>
+        <p>&copy; 2026 Boutique Afrique Style</p>
+    </footer>
 
-      <article class="carte">
-        <img src="images/produit4.jpg" alt="Collier en perles" class="carte__image">
-        <div class="carte__corps">
-          <h3 class="carte__nom">Collier de perles</h3>
-          <p class="carte__prix">8 500 FCFA</p>
-          <button class="btn-ajouter" type="button">Ajouter au panier</button>
-        </div>
-      </article>
-
-      <article class="carte">
-        <img src="images/produit5.jpg" alt="Sandales en cuir" class="carte__image">
-        <div class="carte__corps">
-          <h3 class="carte__nom">Sandales en cuir</h3>
-          <p class="carte__prix">15 000 FCFA</p>
-          <button class="btn-ajouter" type="button">Ajouter au panier</button>
-        </div>
-      </article>
-
-      <article class="carte">
-        <img src="images/produit6.jpg" alt="Masque décoratif sculpté" class="carte__image">
-        <div class="carte__corps">
-          <h3 class="carte__nom">Masque sculpté</h3>
-          <p class="carte__prix">20 000 FCFA</p>
-          <button class="btn-ajouter" type="button">Ajouter au panier</button>
-        </div>
-      </article>
-
-    </section>
-  </main>
-
-  <footer class="pied">
-    <p>© 2026 Afrique Style – Tous droits réservés</p>
-  </footer>
-
-  <script src="js/catalogue.js"></script>
+    <script src="js/catalogue.js"></script>
 </body>
+
 </html>
