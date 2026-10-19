@@ -5,7 +5,7 @@
     position: relative;
     overflow: hidden;
     text-align: center;
-    padding: 110px 20px 120px;
+    padding: 80px 20px 100px;
     border-radius: 12px;
     color: #ffffff;
     background:
@@ -14,6 +14,7 @@
             rgba(0, 0, 0, 0.05) 12px 24px),
         linear-gradient(135deg, #d98a2b 0%, #b5651d 45%, #6f3a12 100%);
     box-shadow: 0 10px 30px rgba(111, 58, 18, 0.35);
+    margin: 2rem 0;
 }
 
 /* Bande décorative en zigzag en bas du bandeau */
@@ -34,42 +35,46 @@
 .bandeau h1 {
     color: #ffffff;
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 3.2rem;
+    font-size: 3rem;
     letter-spacing: 1px;
-    margin: 0 0 16px;
+    margin: 0 0 20px;
     text-shadow: 0 3px 8px rgba(0, 0, 0, 0.35);
+    font-weight: 700;
 }
 
 .bandeau p {
     color: #fff3e0;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-style: italic;
     margin: 0;
     font-weight: 500;
     letter-spacing: 0.5px;
-    line-height: 1.5;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 /* --- Phrase de présentation --- */
 .presentation {
     position: relative;
-    max-width: 650px;
-    margin: 50px auto 30px;
+    max-width: 700px;
+    margin: 60px auto 40px;
     padding: 0 20px;
     text-align: center;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     line-height: 1.8;
-    color: #4a3320;
+    color: #555;
+    font-weight: 500;
 }
 
 .presentation::before {
     content: "";
     display: block;
-    width: 70px;
-    height: 4px;
+    width: 80px;
+    height: 3px;
     margin: 0 auto 25px;
     border-radius: 2px;
-    background: linear-gradient(90deg, #f2c14e, #2e7d32);
+    background: linear-gradient(90deg, #d98a2b, #2e7d32);
 }
 
 /* --- Bouton --- */
@@ -80,7 +85,7 @@
 
 .btn-catalogue {
     display: inline-block;
-    padding: 16px 40px;
+    padding: 16px 45px;
     border-radius: 50px;
     background: linear-gradient(135deg, #2e7d32, #1b5e20);
     color: #ffffff;
@@ -100,11 +105,11 @@
 /* --- Mobile --- */
 @media (max-width: 600px) {
     .bandeau {
-        padding: 70px 15px 80px;
+        padding: 60px 15px 70px;
     }
 
     .bandeau h1 {
-        font-size: 2.1rem;
+        font-size: 2rem;
     }
 
     .bandeau p {
@@ -112,6 +117,7 @@
     }
 
     .presentation {
-        font-size: 1.1rem;
+        font-size: 1rem;
+        margin: 40px auto 30px;
     }
 }
