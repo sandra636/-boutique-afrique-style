@@ -45,6 +45,9 @@
     font-size: 1.4rem;
     font-style: italic;
     margin: 0;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
 }
 
 /* --- Phrase de présentation --- */
